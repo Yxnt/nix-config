@@ -3,6 +3,8 @@
 
 # nix & home-manager 安装配置
 
+
+# direnv 安装
 ---
 
 
