@@ -5,6 +5,8 @@
 {
   imports = [
     ./package/git.nix
+    ./package/starship.nix
+    ./package/bash.nix
   ];
   home.packages = [
     pkgs.htop
@@ -13,6 +15,7 @@
     pkgs.go
     pkgs.docker
     pkgs.which
+    pkgs.starship
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
