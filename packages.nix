@@ -4,33 +4,11 @@
 }:
 {
   imports = [
-    ./package/git.nix
-    ./package/starship.nix
-    ./package/bash.nix
-  ];
-  home.packages = [
-    pkgs.htop
-    pkgs.dig
-    pkgs.git
-    pkgs.go
-    pkgs.docker
-    pkgs.which
-    pkgs.starship
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
-
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
+    ./package/development/go.nix
+    ./package/development/git.nix
+    ./package/shell/starship.nix
+    ./package/shell/bash.nix
+    ./package/development/vscode.nix
+    ./package/tools.nix
   ];
 }
