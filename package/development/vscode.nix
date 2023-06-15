@@ -1,5 +1,6 @@
 {
     pkgs,
+    config,
     ...
 }:
 {
@@ -11,5 +12,8 @@
             eamodio.gitlens
             gruntfuggly.todo-tree
         ];
+    };
+    home.file = {
+        ".vscode-server/extensions" .source = "/${config.home.username}/.vscode/extensions";
     };
 }

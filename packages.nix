@@ -10,5 +10,6 @@
     ./package/shell/bash.nix
     ./package/development/vscode.nix
     ./package/tools.nix
+    ./package/container/docker.nix
   ];
 }

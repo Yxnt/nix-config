@@ -3,6 +3,9 @@
     ...
 }:
 {
+    imports = [
+        ./git_extra.nix
+    ];
     home.packages = [
         pkgs.git
     ];

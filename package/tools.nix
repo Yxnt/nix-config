@@ -7,6 +7,5 @@
         pkgs.htop
         pkgs.dig
         pkgs.which
-        pkgs.docker
     ];
 }
