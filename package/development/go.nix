@@ -5,7 +5,6 @@
 {
     home.packages = [
         pkgs.go_1_20
-        pkgs.vscode
         pkgs.gopls
         pkgs.gotools
         pkgs.go-outline
